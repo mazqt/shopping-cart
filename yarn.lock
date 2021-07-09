@@ -2806,7 +2806,7 @@
   "resolved" "https://registry.npmjs.org/binary-extensions/-/binary-extensions-2.2.0.tgz"
   "version" "2.2.0"
 
-"bluebird@^3.5.5":
+"bluebird@^3.5.0", "bluebird@^3.5.5":
   "integrity" "sha512-XpNj6GDQzdfW+r2Wnn7xiSAd7TM3jzkxGXBGTtWKuSXv1xUV+azxAm8jdWZN06QTQk+2N2XB9jRDkvbmQmcRtg=="
   "resolved" "https://registry.npmjs.org/bluebird/-/bluebird-3.7.2.tgz"
   "version" "3.7.2"
@@ -4363,6 +4363,11 @@
     "inherits" "^2.0.4"
     "minimalistic-assert" "^1.0.1"
     "minimalistic-crypto-utils" "^1.0.1"
+
+"emitter20@^1.0.1":
+  "integrity" "sha1-0Os6WfjXl04jvwtu0zyMOgzTrDY="
+  "resolved" "https://registry.npmjs.org/emitter20/-/emitter20-1.0.1.tgz"
+  "version" "1.0.1"
 
 "emittery@^0.7.1":
   "integrity" "sha512-A8OG5SR/ij3SsJdWDJdkkSYUjQdCUx6APQXem0SaEePBSRg4eymGYwBkKo1Y6DU+af/Jn2dBQqDBvjnr9Vi8nQ=="
@@ -7522,6 +7527,16 @@
   "resolved" "https://registry.npmjs.org/ms/-/ms-2.1.2.tgz"
   "version" "2.1.2"
 
+"mtgsdk@^0.4.3":
+  "integrity" "sha512-qMHLcyQBsnsipP3VYmZYTz3xXaQCzI4c2X2w/YY6HUv2Hcn3zEBLd5uD7+7LNOuHls9qL0/LaGtKQs7kWbPFFg=="
+  "resolved" "https://registry.npmjs.org/mtgsdk/-/mtgsdk-0.4.3.tgz"
+  "version" "0.4.3"
+  dependencies:
+    "emitter20" "^1.0.1"
+    "ramda" "^0.21.0"
+    "request" "^2.81.0"
+    "request-promise" "^4.2.1"
+
 "multicast-dns-service-types@^1.1.0":
   "integrity" "sha1-iZ8R2WhuXgXLkbNdXw5jt3PPyQE="
   "resolved" "https://registry.npmjs.org/multicast-dns-service-types/-/multicast-dns-service-types-1.1.0.tgz"
@@ -9163,6 +9178,11 @@
   dependencies:
     "performance-now" "^2.1.0"
 
+"ramda@^0.21.0":
+  "integrity" "sha1-oAGr7bP/YQd9T/HVd9RN536NCjU="
+  "resolved" "https://registry.npmjs.org/ramda/-/ramda-0.21.0.tgz"
+  "version" "0.21.0"
+
 "randombytes@^2.0.0", "randombytes@^2.0.1", "randombytes@^2.0.5", "randombytes@^2.1.0":
   "integrity" "sha512-vYl3iOX+4CKUWuxGi9Ukhie6fsqXqS9FE2Zaic4tNFD2N2QQaXOMFbuKK4QmDHC0JO6B1Zp41J0LpT0oR68amQ=="
   "resolved" "https://registry.npmjs.org/randombytes/-/randombytes-2.1.0.tgz"
@@ -9600,7 +9620,17 @@
     "stealthy-require" "^1.1.1"
     "tough-cookie" "^2.3.3"
 
-"request@^2.34", "request@^2.88.2":
+"request-promise@^4.2.1":
+  "integrity" "sha512-HCHI3DJJUakkOr8fNoCc73E5nU5bqITjOYFMDrKHYOXWXrgD/SBaC7LjwuPymUprRyuF06UK7hd/lMHkmUXglQ=="
+  "resolved" "https://registry.npmjs.org/request-promise/-/request-promise-4.2.6.tgz"
+  "version" "4.2.6"
+  dependencies:
+    "bluebird" "^3.5.0"
+    "request-promise-core" "1.1.4"
+    "stealthy-require" "^1.1.1"
+    "tough-cookie" "^2.3.3"
+
+"request@^2.34", "request@^2.81.0", "request@^2.88.2":
   "integrity" "sha512-MsvtOrfG9ZcrOwAW+Qi+F6HbD0CWXEh9ou77uOb7FM2WPhwT7smM833PzanhJLsgXjN89Ir6V2PczXNnMpwKhw=="
   "resolved" "https://registry.npmjs.org/request/-/request-2.88.2.tgz"
   "version" "2.88.2"

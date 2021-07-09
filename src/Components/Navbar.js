@@ -9,7 +9,7 @@ const Navbar = () => {
         </a>
         <ul className="right">
           <li>
-            <NavLink to="/" exact="true">
+            <NavLink to="/" exact>
               Home
             </NavLink>
           </li>
