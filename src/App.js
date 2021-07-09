@@ -49,9 +49,9 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Switch>
-          <Route exact path="/" component={Home} />
+          <Route exact path="/shopping-cart/" component={Home} />
           <Route
-            path="/shop"
+            path="/shopping-cart/shop"
             render={() => (
               <Shop
                 cards={cards}
